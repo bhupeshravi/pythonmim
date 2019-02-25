@@ -34,7 +34,7 @@ def getequity():
     d=[]
     cnt=1
     while(cnt<200):
-        urlink="https://www.bseindia.com/corporates/ann.aspx?curpg="+str(cnt)+"&annflag=1&dt=&dur=D&dtto=&cat=&scrip=&anntype=C"
+        urlink="https://www.moneycontrol.com/stocks/"+str(cnt)+"marketstats/nsegainer/index.php&anntype=C"
         # linkz = '<a href="'+urlink+'" target = "_blank">link</a>'
         page = requests.get(urlink)
         soup = BeautifulSoup(page.content, 'html.parser')
@@ -78,7 +78,7 @@ def getmetf():
     d=[]
     cnt=1
     while(cnt<200):
-        urlink="https://www.bseindia.com/corporates/ann.aspx?curpg="+str(cnt)+"&annflag=1&dt=&dur=D&dtto=&cat=&scrip=&anntype=M"
+        urlink="https://www.moneycontrol.com/stocks/"+str(cnt)+"marketstats/nsegainer/index.php&anntype=M"
         # linkz = '<a href="'+urlink+'" target = "_blank">link</a>'
         page = requests.get(urlink)
         soup = BeautifulSoup(page.content, 'html.parser')
@@ -122,7 +122,7 @@ def getdebt():
     d=[]
     cnt=1
     while(cnt<200):
-        urlink="https://www.bseindia.com/corporates/ann.aspx?curpg="+str(cnt)+"&annflag=1&dt=&dur=D&dtto=&cat=&scrip=&anntype=D"
+        urlink="https://www.moneycontrol.com/stocks/"+str(cnt)+"marketstats/nsegainer/index.php&anntype=D"
         # linkz = '<a href="'+urlink+'" target = "_blank">link</a>'
         page = requests.get(urlink)
         soup = BeautifulSoup(page.content, 'html.parser')
@@ -166,7 +166,7 @@ def getmanda():
     d=[]
     cnt=1
     while(cnt<200):
-        urlink="https://www.bseindia.com/corporates/ann.aspx?curpg="+str(cnt)+"&annflag=1&dt=&dur=D&dtto=&cat=&scrip=&anntype=C"
+        urlink="https://www.moneycontrol.com/stocks/"+str(cnt)+"marketstats/nsegainer/index.php&anntype=C"
         page = requests.get(urlink)
         soup = BeautifulSoup(page.content, 'html.parser')
         if(len(soup.findAll("td", class_="TTHeadergrey")) != 0):

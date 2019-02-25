@@ -1,7 +1,4 @@
-Flask==0.12.1
-Flask_Cors==3.0.4
 beautifulsoup4==4.6.0
-requests==2.18.4
 ptvsd==3.2.1
 pandas==0.17.1
 nltk==3.0
